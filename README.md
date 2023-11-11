@@ -44,3 +44,4 @@ npm run build
 ```sh
 npm run lint
 ```
+# vite-vue-ts-unplugin-icons

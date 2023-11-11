@@ -7,23 +7,10 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    ElAim: typeof import('~icons/ep/aim')['default']
-    ElApple: typeof import('~icons/ep/apple')['default']
-    ElBaseball: typeof import('~icons/ep/baseball')['default']
-    EpAim: typeof import('~icons/ep/aim')['default']
-    EpApple: typeof import('~icons/ep/apple')['default']
-    EpBaseball: typeof import('~icons/ep/baseball')['default']
-    IconEpAim: (typeof import('~icons/ic/on-ep-aim'))['default']
-    IconEpApple: (typeof import('~icons/ic/on-ep-apple'))['default']
-    IconEpBaseball: (typeof import('~icons/ic/on-ep-baseball'))['default']
-    IElAim: typeof import('~icons/ep/aim')['default']
-    IElApple: typeof import('~icons/ep/apple')['default']
-    IElBaseball: typeof import('~icons/ep/baseball')['default']
     IEpAim: typeof import('~icons/ep/aim')['default']
     IEpApple: typeof import('~icons/ep/apple')['default']
     IEpBaseball: typeof import('~icons/ep/baseball')['default']
     ISytChecked: typeof import('~icons/syt/checked')['default']
     ISytCompass: typeof import('~icons/syt/compass')['default']
-    ISytIconCompass: typeof import('~icons/syt/icon-compass')['default']
   }
 }
