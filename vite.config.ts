@@ -47,9 +47,34 @@ export default defineConfig({
       autoInstall: true,
       customCollections: {
         //syt 本地svg的集合名称
-        syt: FileSystemIconLoader('./src/assets/svg/syt', (svg) =>
+        //svg图片的路径
+        syt: FileSystemIconLoader('./src/assets/svg', (svg) =>
           svg.replace(/^<svg /, '<svg fill="currentColor" ')
         )
+      },
+      // 设置svg图标的默认大小（这个插件设置的是1.2em）
+      // syt：图标集名称
+      // icon:svg图标名称
+      iconCustomizer(collection, icon, props) {
+        // iconify 的图标设置有效，
+        // if (collection === 'ep') {
+        //   props.width = '16'
+        //   props.height = '16'
+        // }
+
+        // // 自定义的图标设置无效；通过输出变量来看，确实是设置了，但是在页面中的数据却显示设置失败
+        // //解决办法：将svg图片内部设置的宽高删除
+        // if (collection === 'syt') {
+        //   props.width = '200'
+        //   props.height = '200'
+        // }
+
+        //统一设置
+        props.width = '16'
+        props.height = '16'
+        // props.color = 'red'
+
+        //一般情况，不需要设置这个属性
       }
     })
   ],

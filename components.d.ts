@@ -25,5 +25,7 @@ declare module 'vue' {
     ISytChecked: typeof import('~icons/syt/checked')['default']
     ISytCompass: typeof import('~icons/syt/compass')['default']
     ISytIconCompass: typeof import('~icons/syt/icon-compass')['default']
+    ISytJiaofei: typeof import('~icons/syt/jiaofei')['default']
+    ISytJinggao: typeof import('~icons/syt/jinggao')['default']
   }
 }
